@@ -18,10 +18,11 @@ form.addEventListener('submit' , (e) => {
         result.textContent = `BMI : ${bmi}`
         if(bmi<18.6){
             resulttext.textContent = `OOPS ! You are Underweight`;
-        }else if(bmi>=18.6 || bmi<=24.9){
+        }else if(bmi>=18.6 && bmi<=24.9){
             resulttext.textContent = `That's great your BMI is perfect. Go ahead`;
         }else{
             resulttext.textContent = `OOPS! You are overweight`;
         }
     }
+
 })
